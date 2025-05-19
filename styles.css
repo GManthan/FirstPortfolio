@@ -210,10 +210,9 @@ h3{
 
 .sidebar1{
   width: 40%;
-  height: 100%;
-  margin: 10px 0px 0px 30px;
+  height: auto;
+  margin: auto;
   display: flex;
-  
 }
 .wid{
   height: 500px;
@@ -224,10 +223,10 @@ h3{
 
 
 .content1{
-  width: 50%;
-  height: 100%;
-  margin: 0px 0px 0px 30px;
-  padding-top: 95px;
+  width: 45%;
+  height: auto;
+  margin: auto;
+  padding-top: 15px;
   font-size: 30px;
   font-family: 'Titillium Web', sans-serif;
   background: linear-gradient(90deg, #4b6cb7, #182848);
