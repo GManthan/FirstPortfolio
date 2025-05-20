@@ -3,7 +3,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-     scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 html, body {
   height: 100%;
@@ -35,13 +35,12 @@ section {
 #header {
     display: flex;
     align-items: center;
-     padding: 15px;
-  width: 100%;
-  height: 10%;
-justify-content: space-between;
-order: 1;
-margin-bottom: 0px;
-
+    padding: 15px;
+    width: 100%;
+    height: 10%;
+    justify-content: space-between;
+    order: 1;
+    margin-bottom: 0px;
 }
 .logo {
   height: 50px;
@@ -70,7 +69,7 @@ a{
 
 
 #sidebar {
- flex: 1 1 40%;
+  flex: 1 1 40%;
   order: 2;
 }
 
@@ -80,7 +79,7 @@ a{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 900;
-     text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
 }
 h2{
     font-size: 21px;
@@ -95,7 +94,7 @@ h1{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 900;
-     text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
 }
 h3{
     font-size: 24.5px;
@@ -108,7 +107,7 @@ h3{
     display: flex;
     height: 40px;
     margin: 0px 10px 0px 80px;
-    
+    flex-wrap: wrap;
 }
 .si{
     height: 40px;
@@ -123,6 +122,7 @@ h3{
   margin: 50px 0px 0px 90px;
   display: flex;
   gap: 15px;
+  flex-wrap: wrap;
 }
 
 .btn {
@@ -133,6 +133,7 @@ h3{
   color: white;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  margin-bottom: 10px;
 }
 
 .github-btn {
@@ -151,7 +152,7 @@ h3{
   background-color: #0096c7;
 }
 
- #content {
+#content {
   flex: 1 1 50%;
   max-width: 1200px;
   margin: 0 auto;
@@ -200,8 +201,8 @@ h3{
   font-weight: 800;
   text-align: center;
   background: linear-gradient(90deg, #4b0082, #800080, #c71585);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   margin: 30px 0px 0px 0px;
   font-family: 'Orbitron', sans-serif;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
@@ -251,8 +252,8 @@ h3{
   font-weight: 800;
   text-align: center;
   background: linear-gradient(90deg, #4b0082, #800080, #c71585);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   margin: 30px 0px 0px 0px;
   font-family: 'Orbitron', sans-serif;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
@@ -340,24 +341,6 @@ h3{
   font-size: 14px;
 }
 
-@media (max-width: 1200px) {
-  .card-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media (max-width: 900px) {
-  .card-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 600px) {
-  .card-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
 #contact{
   order: 6;
   width: 95%;
@@ -376,8 +359,8 @@ h3{
   font-weight: 800;
   text-align: center;
   background: linear-gradient(90deg, #4b0082, #800080, #c71585);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   margin: 30px 0px 50px 0px;
   font-family: 'Orbitron', sans-serif;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
@@ -452,4 +435,292 @@ h3{
   font-family: 'Titillium Web', sans-serif;
   color: #2b0505;
   font-size: 20px;
+}
+
+/* RESPONSIVE STYLES */
+
+/* Mobile menu toggle button */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #2b0505;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+}
+
+/* Large Devices (Desktops) */
+@media (max-width: 1200px) {
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  h1 {
+    font-size: 45px;
+  }
+  
+  .wid {
+    height: 450px;
+    width: 450px;
+  }
+  
+  .content1 {
+    font-size: 28px;
+  }
+}
+
+/* Medium Devices (Tablets) */
+@media (max-width: 992px) {
+  #home {
+    flex-direction: column;
+  }
+  
+  #sidebar, #content {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+  
+  #content {
+    order: 3;
+  }
+  
+  h1 {
+    font-size: 40px;
+    margin-left: 30px;
+  }
+  
+  h2, h3 {
+    margin-left: 30px;
+  }
+  
+  .social-icons {
+    margin-left: 20px;
+  }
+  
+  .buttons {
+    margin-left: 30px;
+  }
+  
+  .work1 {
+    height: 350px;
+    width: 350px;
+  }
+  
+  #whatido {
+    flex-direction: column;
+    margin: 100px 15px 70px 15px;
+    border-radius: 50px;
+  }
+  
+  .sidebar1, .content1 {
+    width: 90%;
+    text-align: center;
+  }
+  
+  .content1 {
+    font-size: 24px;
+    padding: 0 20px 30px 20px;
+  }
+  
+  .wid {
+    height: 350px;
+    width: 350px;
+    margin: 0 auto;
+  }
+  
+  #skills {
+    border-radius: 50px;
+  }
+  
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  #contact {
+    border-radius: 50px;
+  }
+  
+  .contact-container {
+    flex-direction: column;
+  }
+  
+  .sidebar2, .content2 {
+    width: 90%;
+  }
+  
+  .contact-img {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+/* Small Devices (Landscape Phones) */
+@media (max-width: 768px) {
+  #header {
+    position: relative;
+  }
+  
+  nav {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease;
+    z-index: 100;
+  }
+  
+  nav.active {
+    max-height: 300px;
+    padding: 10px 0;
+  }
+  
+  .nav {
+    padding: 12px 20px;
+    text-align: center;
+    margin: 5px 0;
+    width: 100%;
+    display: block;
+  }
+  
+  .menu-toggle {
+    display: block;
+  }
+  
+  h1 {
+    font-size: 32px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+  
+  h2 {
+    font-size: 18px;
+    margin-left: 20px;
+    margin-top: 40px;
+  }
+  
+  h3 {
+    font-size: 20px;
+    margin-left: 20px;
+  }
+  
+  .social-icons {
+    margin-left: 15px;
+    justify-content: center;
+  }
+  
+  .buttons {
+    margin-left: 20px;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  .work1 {
+    height: 280px;
+    width: 280px;
+    margin-top: 20px;
+  }
+  
+  #header1, #header2, #header3 {
+    font-size: 36px;
+  }
+  
+  .wid {
+    height: 280px;
+    width: 280px;
+  }
+  
+  .content1 {
+    font-size: 20px;
+  }
+  
+  .card-grid {
+    padding: 15px;
+  }
+  
+  .footer2 p {
+    font-size: 16px;
+    padding: 0 15px;
+  }
+}
+
+/* Extra Small Devices (Portrait Phones) */
+@media (max-width: 576px) {
+  .work1 {
+    height: 220px;
+    width: 220px;
+  }
+  
+  h1 {
+    font-size: 28px;
+  }
+  
+  h3 {
+    font-size: 18px;
+  }
+  
+  .btn {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+  
+  #whatido, #skills, #contact {
+    border-radius: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 95%;
+  }
+  
+  #header1, #header2, #header3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .wid {
+    height: 220px;
+    width: 220px;
+  }
+  
+  .content1 {
+    font-size: 18px;
+  }
+  
+  .card-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  
+  .card-image {
+    height: 160px;
+  }
+  
+  .contact-img {
+    border-radius: 30px;
+  }
+  
+  .contact-item {
+    font-size: 16px;
+  }
+  
+  .footer-line {
+    width: 90%;
+  }
+  
+  .footer2 p {
+    font-size: 14px;
+  }
 }
