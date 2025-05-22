@@ -7,7 +7,7 @@ body{
 }
 html, body {
   height: 100%;
-  overflow-x: hidden; /* Prevent horizontal scroll */  
+  overflow-x: hidden; 
 }
   
 section {
@@ -261,8 +261,8 @@ h3{
 
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Exactly 4 columns */
-  grid-template-rows: repeat(2, auto); /* 2 rows */
+  grid-template-columns: repeat(4, 1fr); 
+  grid-template-rows: repeat(2, auto); 
   gap: 20px;
   max-width: 1200px;
   margin: 0 auto;
@@ -270,7 +270,7 @@ h3{
   box-sizing: border-box;
 }
 
-/* Individual Card */
+
 .card {
   background: linear-gradient(135deg, #3a5876, #263c50);
   border-radius: 8px;
@@ -417,7 +417,7 @@ h3{
   height: 30px;
 }
 
-/* Footer */
+
 .footer2 {
   text-align: center;
   margin-top: 50px;
@@ -437,9 +437,9 @@ h3{
   font-size: 20px;
 }
 
-/* RESPONSIVE STYLES */
 
-/* Mobile menu toggle button */
+
+
 .menu-toggle {
   display: none;
   background: none;
@@ -477,7 +477,7 @@ h3{
   }
 }
 
-/* Medium Devices (Tablets) */
+
 @media (max-width: 992px) {
   #home {
     flex-direction: column;
@@ -488,7 +488,7 @@ h3{
     max-width: 100%;
   }
   
-  /* Content should come before sidebar on mobile */
+  
   #content {
     order: 2;
     margin-top: 30px;
@@ -584,9 +584,9 @@ h3{
   }
 }
 
-/* Small Devices (Landscape Phones) */
+
 @media (max-width: 768px) {
-  /* Keep the image above the sidebar content */
+  
   #content {
     order: 2;
     display: flex;
@@ -622,7 +622,7 @@ h3{
     margin: 0 auto;
   }
   
-  /* Rest of your existing mobile styles */
+  
   #header {
     position: relative;
     padding: 15px 15px;
